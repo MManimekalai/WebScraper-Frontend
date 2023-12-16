@@ -16,11 +16,9 @@ useEffect(()=>{
     //const response = await axios.get("http://localhost:4000/api/fetch")
     const { amazonProducts, flipkartProducts, snapdealProducts } = response.data;
     const FinalProducts = [...amazonProducts, ...flipkartProducts, ...snapdealProducts];
-    // const data = await response.json();
-    // console.log("response", response.data); 
-   
+  
     setProducts(FinalProducts)
-    console.log("products", products)
+    //console.log("products", products)
   };
    
   getProducts();
